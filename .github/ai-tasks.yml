@@ -1,0 +1,20 @@
+# This repo accepts donated AI agent time through oss-tokens.
+# Spec: https://github.com/judoka11/oss-tokens/blob/main/SPEC.md
+version: 1
+ai_help: true
+
+policy: CONTRIBUTING.md#ai-assisted-contributions
+
+allowed_tasks: [repro, triage, failing-test, docs]
+pull_requests: none
+result_format: standard
+
+verify:
+  image: node:22-alpine
+  command: npm test
+
+limits:
+  per_donor_open: 2
+  claim_hours: 24
+
+notes: Tiny library with no dependencies. All code is in src/index.js, tests in test/slug.test.js.

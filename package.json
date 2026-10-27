@@ -1,0 +1,17 @@
+{
+  "name": "tiny-slug",
+  "version": "1.2.0",
+  "description": "Turn titles into URL- and file-friendly slugs. No dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["slug", "slugify", "url"],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
